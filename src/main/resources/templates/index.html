@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Application Form</title>
+<style>
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	background-color: white
+}
+
+h1 {
+	color: #ea503f;
+	font-family: Arial;
+	text-align: center
+}
+
+body {
+	background-color: skyblue
+}
+
+table {
+	background-color: skyblue
+}
+</style>
+</head>
+<body>
+	<h1>Job Application Form</h1>
+
+	<form action="saveEmployee" method="post">
+		<h3>Personal Information</h3>
+		<table border="0" cellpadding="5" cellspacing="0">
+			<tr>
+				<td style="width: 50%"><label for="First_Name"><b>First
+							name *</b></label><br /> <input name="firstName" type="text" maxlength="50"
+					style="width: 100%; max-width: 260px" /></td>
+				<td style="width: 50%"><label for="Last_Name"><b>Last
+							name *</b></label><br /> <input name="lastName" type="text" maxlength="50"
+					style="width: 100%; max-width: 260px" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="Email_Address"><b>Email
+							*</b></label><br /> <input name="email" type="text" maxlength="100"
+					style="width: 100%; max-width: 535px" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="Portfolio"><b>Portfolio
+							website</b></label><br /> <input name="portfolio" type="text"
+					maxlength="255" value="http://"
+					style="width: 100%; max-width: 535px" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="Position"><b>Position
+							you are applying for *</b></label><br /> <input name="position" type="text"
+					maxlength="100" style="width: 100%; max-width: 535px" /></td>
+			</tr>
+			<tr>
+				<td><label for="Salary"><b>Salary requirements</b></label><br />
+					<input name="salaryRequirement" type="text" maxlength="50"
+					style="width: 100%; max-width: 260px" /></td>
+				<td><label for="StartDate"><b>When can you start?</b></label><br />
+					<input name="whenWeStart" type="text" maxlength="50"
+					style="width: 100%; max-width: 260px" /></td>
+			</tr>
+			<tr>
+				<td><label for="Phone"><b>Phone *</b></label><br /> <input
+					name="mobileNo" type="text" maxlength="50"
+					style="width: 100%; max-width: 260px" /> <label for="CV"><b>CV
+							*</b></label></br> <input type="file" name="imgUrl"></td>
+		</table>
+		<h3>Last Company work For *:</h3>
+		<input name="lastCompany" type="text">
+		<div>
+
+			<button type="submit">Submit</button>
+
+
+		</div>
+
+
+
+	</form>
+	<table>
+
+
+	</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
